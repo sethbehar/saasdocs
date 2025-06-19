@@ -2,13 +2,13 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='mx-10 flex flex-row items-center justify-center'>
+    <div className='mx-10 flex flex-row items-center justify-center select-none'>
         <div>
             <div className='flex flex-row gap-2 mb-4'>
-                <img src='/React.png' alt='' width={50} height={50} />    
-                <img src='/Supabase.png' alt='' width={50} height={50} />
-                <img src='/Nodejs.png' alt='' width={50} height={50} />
-                <img src='/Stripe.png' alt='' width={50} height={50} />
+                <img src='/react.png' alt='' width={75} height={75} />    
+                <img src='/supabase.png' alt='' width={75} height={75} />
+                <img src='/node.png' alt='' width={75} height={75} />
+                <img src='/stripe.png' alt='' width={75} height={75} />
             </div>
             <div className='text-4xl md:text-[64px] lg:text-[80px] mb-4'>
                 <span className=''>SaaS</span> Docs
