@@ -8,7 +8,7 @@ const Hero = () => {
             <div className='flex flex-row gap-2 mb-4'>
                 <img src='/React.png' alt='react' width={50} height={50} />    
                 <img src='/Supabase.png' alt='supabase' width={50} height={50} />
-                <img src='/Node.png' alt='node' width={50} height={50} />
+                <img src='/node.png' alt='node' width={50} height={50} />
                 <img src='/Stripe.png' alt='stripe' width={50} height={50} />
             </div>
             <div className='text-4xl md:text-[64px] lg:text-[80px] mb-4'>

@@ -11,7 +11,7 @@ const Introduction = () => {
     {
       name: "Tailwind CSS",
       description: "(styling)",
-      image: "/Tailwind.png",
+      image: "/tailwind.png",
       link: "https://tailwindcss.com/docs",
     },
     {
