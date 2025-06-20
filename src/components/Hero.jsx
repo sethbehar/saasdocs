@@ -6,10 +6,10 @@ const Hero = () => {
     <div className='mx-10 flex flex-col md:flex-row items-center justify-center select-none'>
         <div>
             <div className='flex flex-row gap-2 mb-4'>
-                <img src='/react.png' alt='' width={50} height={50} />    
-                <img src='/supabase.png' alt='' width={50} height={50} />
-                <img src='/node.png' alt='' width={50} height={50} />
-                <img src='/stripe.png' alt='' width={50} height={50} />
+                <img src='/React.png' alt='react' width={50} height={50} />    
+                <img src='/Supabase.png' alt='supabase' width={50} height={50} />
+                <img src='/Node.png' alt='node' width={50} height={50} />
+                <img src='/Stripe.png' alt='stripe' width={50} height={50} />
             </div>
             <div className='text-4xl md:text-[64px] lg:text-[80px] mb-4'>
                 <span className=''>SaaS</span> DocS

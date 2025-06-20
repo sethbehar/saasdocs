@@ -5,37 +5,37 @@ const Introduction = () => {
     {
       name: "React",
       description: "(frontend)",
-      image: "/react.png",
+      image: "/React.png",
       link: "https://reactjs.org/docs/getting-started.html",
     },
     {
       name: "Tailwind CSS",
       description: "(styling)",
-      image: "/tailwind.png",
+      image: "/Tailwind.png",
       link: "https://tailwindcss.com/docs",
     },
     {
       name: "Supabase",
       description: "(db and auth)",
-      image: "/supabase.png",
+      image: "/Supabase.png",
       link: "https://supabase.com/docs",
     },
     {
       name: "Stripe",
       description: "(payment processing)",
-      image: "/stripe.png",
+      image: "/Stripe.png",
       link: "https://stripe.com/docs",
     },
     {
       name: "Vercel",
       description: "(hosting the frontend)",
-      image: "/vercel.png",
+      image: "/Vercel.png",
       link: "https://vercel.com/docs",
     },
     {
       name: "Railway",
       description: "(hosting the backend)",
-      image: "/railway.png",
+      image: "/Railway.png",
       link: "https://railway.app/docs",
     },
   ];
