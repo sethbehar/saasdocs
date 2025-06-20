@@ -1,0 +1,29 @@
+Main SaaS Docs Repo:
+    Landing Page:
+        ✔ Configure routing @started(25-06-19 11:35) @done(25-06-19 11:48) @lasted(13m11s)
+        ✔ Add product, docs, about routes @done(25-06-19 11:54)
+        ✔ Go to docs button route @done(25-06-19 11:55)
+        ✔ Complete about section below the hero section @started(25-06-19 11:57) @done(25-06-19 12:31) @lasted(34m10s)
+        ✔ Add a footer @done(25-06-19 11:59)
+        ✔ Create design for hero image @started(25-06-19 12:32) @done(25-06-19 14:24) @lasted(1h52m18s)
+        ✔ Create design for about image @started(25-06-19 12:32) @done(25-06-19 14:24) @lasted(1h52m19s)
+        ☐ Add product features within product section
+
+    Documentation Planning:
+        ✔ Coming up with sections (intro, design, etc...) @started(25-06-19 14:24) @done(25-06-19 15:01) @lasted(37m21s)
+        ✔ Create figma markup @done(25-06-19 15:01)
+
+    Product Page on SaaS:
+        ☐ Create product page
+        ☐ Add product features
+        ☐ Add product pricing
+        ☐ Integrate Stripe 
+        ☐ Integrate Supabase 
+
+
+Demo Repo:
+    Template Product:
+        ☐ Create repo
+        ☐ Create landing page
+        ☐ Integrate Supabase
+        ☐ Integrate Stripe
