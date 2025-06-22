@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom";
 import Introduction from "./Introduction";
 import { useState } from "react";
+import Setup from "./Setup";
 
 const Docs = () => {
     const [activeSection, setActiveSection] = useState('introduction')
 
     const sections = [
         { id: 'introduction', title: 'Introduction', component: <Introduction />, image: "/tailwind.png" },
-        { id: 'setup', title: 'Setup', component: <div>Setup content</div>, image: "/React.png" },
+        { id: 'setup', title: 'Setup', component: <Setup />, image: "/React.png" },
         { id: 'database', title: 'Database', component: <div>Database content</div>, image: "/postgres.png" },
         { id: 'authentication', title: 'Authentication', component: <div>Authentication content</div>, image: "/Supabase.png" },
         { id: 'stripe', title: 'Stripe', component: <div>Stripe content</div>, image: "/Stripe.png" },

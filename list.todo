@@ -13,7 +13,7 @@ Main SaaS Docs Repo:
         ✔ Coming up with sections (intro, design, etc...) @started(25-06-19 14:24) @done(25-06-19 15:01) @lasted(37m21s)
         ✔ Create figma markup @done(25-06-19 15:01)
 
-    Product Page on SaaS:
+    Product Page on SaaS Docs:
         ☐ Create product page
         ☐ Add product features
         ☐ Add product pricing
@@ -24,6 +24,20 @@ Main SaaS Docs Repo:
 Demo Repo:
     Template Product:
         ☐ Create repo
-        ☐ Create landing page
-        ☐ Integrate Supabase
-        ☐ Integrate Stripe
+        ✔ Create landing page @done(25-06-22 08:58)
+        ✔ Integrate Supabase @done(25-06-22 08:58)
+        ✔ Integrate Stripe @done(25-06-22 08:58)
+
+    Landing Page:
+        ✔ Complete landing page @done(25-06-22 08:58)
+        ☐ Design product showcase page
+        ☐ Include area for demo
+        ☐ Add testimonials section
+        ☐ Implement contact form
+        ☐ Optimize for mobile devices
+
+    Documentation:
+        ☐ Finish setup page
+        ☐ Finish User DB page
+        ☐ Finish Authentication page
+        ☐ Start Stripe page (checkout, integration)
