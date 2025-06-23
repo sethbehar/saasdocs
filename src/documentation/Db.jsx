@@ -4,14 +4,14 @@ const Db = () => {
           <div className="ml-12 py-12">
               <div className="flex flex-row gap-1 items-center mb-12">
                   <h1 className="text-2xl md:text-4xl">Database</h1>
-                  <img src="/Supabase.png" alt="Supabase" className="w-12 h-12 mt-1" />
+                  <img src="/Supabase.png" alt="Supabase" className="w-12 h-12" />
               </div>
   
               {/* API KEY Setup */}
               <div className="mb-4 flex flex-col gap-2">
                   <div className="flex flex-row gap-2 items-center">
                       <span className="text-2xl text-black">Supabase Project Setup</span>
-                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-6" />
+                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-8" />
                   </div>
                   <p>
                       Lets get our Supabase project setup. First, we need to create a new project on the <a href="https://supabase.com" className="text-blue-500 hover:underline">Supabase website</a>. Once you have created your project, you will be able to access your database and API keys.
@@ -28,7 +28,7 @@ const Db = () => {
               <div className="mb-4 flex flex-col gap-2">
                   <div className="flex flex-row gap-2 items-center mt-12">
                       <span className="text-2xl text-black">Users Table</span>
-                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-6" />
+                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-8" />
                   </div>
                   <p>
                       In these docs, we will create a users table to track our users and their subscriptions. You can create this table in the Supabase by navigating to the <span className="text-green-300 dark:bg-gray-800 p-1 rounded-lg">"Database"</span> section and clicking <span className="text-green-300 dark:bg-gray-800 p-1 rounded-lg">"Tables" {"->"} "New Table"</span>
@@ -46,7 +46,7 @@ const Db = () => {
               <div className="mb-4 flex flex-col gap-2">
                   <div className="flex flex-row gap-2 items-center mt-12">
                       <span className="text-2xl text-black">Trigger Setup</span>
-                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-6" />
+                      <img src="/Supabase.png" alt="Supabase" className="w-8 h-8" />
                   </div>
                   <p>
                       To setup our trigger for the users table, we will need to create a new trigger in the <span className='text-green-300 dark:bg-gray-800 p-1 rounded-lg'>Supabase dashboard SQL Editor</span>. This trigger will automatically insert a new row into our users table when a new user signs up.
