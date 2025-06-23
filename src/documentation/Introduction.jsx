@@ -5,7 +5,7 @@ const Introduction = () => {
     {
       name: "React",
       description: "(frontend)",
-      image: "/react.png",
+      image: "/React.png",
       link: "https://reactjs.org/docs/getting-started.html",
     },
     {
@@ -17,13 +17,13 @@ const Introduction = () => {
     {
       name: "Supabase",
       description: "(db and auth)",
-      image: "/supabase.png",
+      image: "/Supabase.png",
       link: "https://supabase.com/docs",
     },
     {
       name: "Stripe",
       description: "(payment processing)",
-      image: "/stripe.png",
+      image: "/Stripe.png",
       link: "https://stripe.com/docs",
     },
     {
