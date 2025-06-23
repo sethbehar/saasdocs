@@ -5,8 +5,8 @@ const Setup = () => {
         <div className="ml-12 py-12">
             <div className="flex flex-row gap-1 items-center mb-12">
                 <h1 className="text-2xl md:text-4xl">Setup</h1>
-                <img src="/React.png" alt="React" className="w-12 h-12 mt-1" />
-                <img src='Vite.png' alt="Vite" className="w-12 h-12 mt-1" />
+                <img src="/react.png" alt="React" className="w-12 h-12 mt-1" />
+                <img src='vite.png' alt="Vite" className="w-12 h-12 mt-1" />
             </div>
 
             {/* React + Vite Setup */}
@@ -29,7 +29,7 @@ const Setup = () => {
             <div className="mb-4 flex flex-col gap-2">
                 <div className="flex flex-row gap-2 items-center mt-12">
                     <span className="text-2xl text-black">Tailwind</span>
-                    <img src="/Tailwind.png" alt="Tailwind CSS" className="w-8 h-6" />
+                    <img src="/tailwind.png" alt="Tailwind CSS" className="w-8 h-6" />
                 </div>
                 <p>
                     To setup our styling framework (Tailwind CSS), we can run the following command in our terminal:
@@ -49,7 +49,7 @@ const Setup = () => {
             <div className="mb-4 flex flex-col gap-2">
                 <div className="flex flex-row gap-2 items-center mt-12">
                     <span className="text-2xl text-black">React Router</span>
-                    <img src="/React.png" alt="React" className="w-8 h-8" />
+                    <img src="/react.png" alt="React" className="w-8 h-8" />
                 </div>
                 <p>
                     To setup our routing library (React Router), we can run the following command in our terminal:

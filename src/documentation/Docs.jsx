@@ -1,21 +1,22 @@
-import React from "react"
 import { Link } from "react-router-dom";
-import Introduction from "./Introduction";
 import { useState } from "react";
+import Introduction from "./Introduction";
 import Setup from "./Setup";
+import Db from "./Db";
+import Authentication from "./Authentication";
 
 const Docs = () => {
     const [activeSection, setActiveSection] = useState('introduction')
 
     const sections = [
         { id: 'introduction', title: 'Introduction', component: <Introduction />, image: "/tailwind.png" },
-        { id: 'setup', title: 'Setup', component: <Setup />, image: "/React.png" },
-        { id: 'database', title: 'Database', component: <div>Database content</div>, image: "/postgres.png" },
-        { id: 'authentication', title: 'Authentication', component: <div>Authentication content</div>, image: "/Supabase.png" },
-        { id: 'stripe', title: 'Stripe', component: <div>Stripe content</div>, image: "/Stripe.png" },
-        { id: 'hosting', title: 'Hosting', component: <div>Hosting content</div>, image: "/Vercel.png" },
-        { id: 'deployment', title: 'Deployment', component: <div>Deployment content</div>, image: "/Railway.png" },
-        { id: 'template', title: 'SaaS Template', component: <div>SaaS Template content</div>, image: "/Template.png" },
+        { id: 'setup', title: 'Setup', component: <Setup />, image: "/react.png" },
+        { id: 'database', title: 'Database', component: <Db />, image: "/postgres.png" },
+        { id: 'authentication', title: 'Authentication', component: <Authentication />, image: "/supabase.png" },
+        { id: 'stripe', title: 'Stripe', component: <div>Stripe content</div>, image: "/stripe.png" },
+        { id: 'hosting', title: 'Hosting', component: <div>Hosting content</div>, image: "/vercel.png" },
+        { id: 'deployment', title: 'Deployment', component: <div>Deployment content</div>, image: "/railway.png" },
+        { id: 'template', title: 'SaaS Template', component: <div>SaaS Template content</div>, image: "/template.png" },
     ]
 
     const currentSection = sections.find(section => section.id === activeSection)
@@ -24,9 +25,8 @@ const Docs = () => {
         <div className="text-black h-screen overflow-hidden">
             <div className="grid grid-cols-12 h-full">
                 {/* Fixed Sidebar */}
-                <div className="col-span-3 lg:col-span-2 p-6 flex flex-col h-full overflow-y-auto border-r border-gray-200">
-                    <Link to='/' className="text-lg font-bold mb-10">Saas Docs</Link>
-
+                <div className="text-sm md:text-md col-span-3 lg:col-span-2 p-4 flex flex-col h-full overflow-y-auto border-r border-gray-200 overflow-x-hidden">
+                    <img src="/logo.png" alt="Logo" className="w-48 h-24 mb-4 mx-auto" />
                     <nav className="flex-1">
                         <ul className="space-y-2 text-gray-500">
                             {sections.map(section => (

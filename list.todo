@@ -7,18 +7,40 @@ Main SaaS Docs Repo:
         ✔ Add a footer @done(25-06-19 11:59)
         ✔ Create design for hero image @started(25-06-19 12:32) @done(25-06-19 14:24) @lasted(1h52m18s)
         ✔ Create design for about image @started(25-06-19 12:32) @done(25-06-19 14:24) @lasted(1h52m19s)
-        ☐ Add product features within product section
+        ✔ Add product features within product section @done(25-06-23 10:54)
 
     Documentation Planning:
         ✔ Coming up with sections (intro, design, etc...) @started(25-06-19 14:24) @done(25-06-19 15:01) @lasted(37m21s)
         ✔ Create figma markup @done(25-06-19 15:01)
 
     Product Page on SaaS Docs:
-        ☐ Create product page
-        ☐ Add product features
-        ☐ Add product pricing
-        ☐ Integrate Stripe 
-        ☐ Integrate Supabase 
+        ✔ Create product page @started(25-06-23 08:09) @done(25-06-23 08:13) @lasted(4m48s)
+        ✔ Add product features @started(25-06-23 08:14) @done(25-06-23 08:27) @lasted(13m14s)
+        ✔ Add product pricing @started(25-06-23 08:27) @done(25-06-23 08:27) @lasted(17s)
+        ✔ Integrate Stripe @done(25-06-23 09:28)
+        ✔ Integrate Supabase @done(25-06-23 09:28)
+
+    Github Integration:
+        ☐ Create endpoint to add collaborators to repo
+        ☐ Create stripe webhook to listen for successful payments
+        ☐ Create email template for successful payment
+
+    
+    Documentation:
+        ✔ Finish setup page @done(25-06-23 09:30)
+        ✔ Finish User DB page @done(25-06-23 14:45)
+        ✔ Finish Authentication page @done(25-06-23 14:45)
+        ☐ Start Stripe page (checkout, integration)
+
+    Drawing:
+        ☐ Fix all images on main vercel hosting
+        ✔ Checkmark @done(25-06-23 15:41)
+        ✔ Vercel @done(25-06-23 15:41)
+        ✔ X mark @done(25-06-23 15:41)
+        ✔ v0 @done(25-06-23 15:41)
+        ✔ Railway @done(25-06-23 15:41)
+        ✔ Star @done(25-06-23 15:41)
+        ✔ SaaS Docs logo @done(25-06-23 15:41)
 
 
 Demo Repo:
@@ -30,14 +52,8 @@ Demo Repo:
 
     Landing Page:
         ✔ Complete landing page @done(25-06-22 08:58)
-        ☐ Design product showcase page
+        ☐ Design product showcase page 
         ☐ Include area for demo
         ☐ Add testimonials section
         ☐ Implement contact form
         ☐ Optimize for mobile devices
-
-    Documentation:
-        ☐ Finish setup page
-        ☐ Finish User DB page
-        ☐ Finish Authentication page
-        ☐ Start Stripe page (checkout, integration)

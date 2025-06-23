@@ -13,15 +13,14 @@ const Product = () => {
         </div>
         <div className="flex flex-col gap-4">
           <span className="text-md text-gray-600">
-            As a means to streamline the process, you can purchase my complete SaaS template, which includes all the necessary integrations and features to get you started quickly.
+            As a means to streamline the process, you can purchase a complete SaaS template, which includes all the necessary integrations and features to get you started quickly.
           </span>
           <span className="text-md text-gray-600">
-            Simply enter in your API keys and database URL, and focus on building your product.
+            Simply add your API keys and database URL, and focus on building your product.
           </span>
-
         </div>
       </div>
-        <img src="/Demo.png" alt="Product illustration" className="max-w-xs md:max-w-sm lg:max-w-md mt-6 shadow-2xl" />
+        <img src="/Demo.png" alt="Product illustration" className="max-w-xs md:max-w-sm lg:max-w-md mt-6 shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={() => window.open('https://saasdocs.vercel.app', '_blank')}/>
     </div >
   )
 }
