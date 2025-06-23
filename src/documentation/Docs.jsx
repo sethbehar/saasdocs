@@ -11,13 +11,13 @@ const Docs = () => {
 
     const sections = [
         { id: 'introduction', title: 'Introduction', component: <Introduction />, image: "/tailwind.png" },
-        { id: 'setup', title: 'Setup', component: <Setup />, image: "/react.png" },
+        { id: 'setup', title: 'Setup', component: <Setup />, image: "/React.png" },
         { id: 'database', title: 'Database', component: <Db />, image: "/postgres.png" },
         { id: 'authentication', title: 'Authentication', component: <Authentication />, image: "/Supabase.png" },
         { id: 'stripe', title: 'Stripe', component: <div>Stripe content</div>, image: "/Stripe.png" },
         { id: 'hosting', title: 'Hosting', component: <div>Hosting content</div>, image: "/vercel.png" },
         { id: 'deployment', title: 'Deployment', component: <div>Deployment content</div>, image: "/railway.png" },
-        { id: 'template', title: 'SaaS Template', component: <div>SaaS Template content</div>, image: "/template.png" },
+        { id: 'template', title: 'SaaS Template', component: <div>SaaS Template content</div>, image: "/star.png" },
     ]
 
     const currentSection = sections.find(section => section.id === activeSection)
