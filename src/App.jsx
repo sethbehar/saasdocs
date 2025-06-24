@@ -42,7 +42,7 @@ const App = () => {
           <Hero />
           <About />
           <Product />
-          <Pricing />
+          <Pricing session={session} supabase={supabase} />
           <Footer />
         </div>}
       />

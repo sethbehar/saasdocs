@@ -65,10 +65,12 @@ const Introduction = () => {
       <p className='text-sm text-gray-600 mb-4'>The purpose of this documentation is to help beginners (like myself sometimes) streamline the dev process and avoid making these mistakes</p>
       <p className='text-sm text-gray-600 mt-4'>Most developers stay in localhost for way too long, follow these docs and ship your product</p>
       <p className='text-xs text-gray-600 mt-4'>Or check out our template and premium resources to get started quickly</p>
+      <p className='text-sm text-gray-600 mt-4'>I do not expect anyone to really use these docs or product, the original inspiration was to give myself a head start when building startups with the same tech stack. If I am constantly setting up my db, auth, express sever, and stripe integration, I may as well document the process and share it with anyone who wants to build faster</p>
+
 
       <h1 className="text-2xl md:text-4xl mt-10 mb-4">Why this tech stack?</h1>
       <p className='text-sm text-gray-600 mb-4'>I have used this tech stack a lot in the past year and genuinely enjoy writing code with it</p>
-      <p className='text-sm text-gray-600 mb-4'>React+Vite is fast, tailwind is great (once you get the hang of it), Supabase is a great overall backend solution, Stripe (well it's Stripe), and Vercel is a super simple hosting platform</p>
+      <p className='text-sm text-gray-600 mb-4'>React+Vite is fast, tailwind is great (once you get the hang of it), Supabase is a great overall db and auth solution, Stripe (well it's Stripe), and Vercel/Railway are very simple platforms</p>
       <p className='text-sm text-gray-600 mt-4'>If you are a beginner, dive deep into something you are passionate about or want to learn. Don't just copy and paste from GPT, fail and learn</p>
     </div>
   );

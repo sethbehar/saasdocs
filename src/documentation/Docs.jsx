@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Introduction from "./Introduction";
 import Setup from "./Setup";
 import Db from "./Db";
 import Authentication from "./Authentication";
-import { useNavigate } from "react-router-dom";
+import Stripe from "./Stripe";
+import Template from "./Template";
+
 const Docs = () => {
     const navigate = useNavigate()
     const [activeSection, setActiveSection] = useState('introduction')
@@ -13,11 +16,11 @@ const Docs = () => {
         { id: 'introduction', title: 'Introduction', component: <Introduction />, image: "/tailwind.png" },
         { id: 'setup', title: 'Setup', component: <Setup />, image: "/React.png" },
         { id: 'database', title: 'Database', component: <Db />, image: "/postgres.png" },
-        { id: 'authentication', title: 'Authentication', component: <Authentication />, image: "/Supabase.png" },
-        { id: 'stripe', title: 'Stripe', component: <div>Stripe content</div>, image: "/Stripe.png" },
+        { id: 'authentication', title: 'Auth', component: <Authentication />, image: "/Supabase.png" },
+        { id: 'stripe', title: 'Stripe', component: <Stripe />, image: "/Stripe.png" },
         { id: 'hosting', title: 'Hosting', component: <div>Hosting content</div>, image: "/vercel.png" },
         { id: 'deployment', title: 'Deployment', component: <div>Deployment content</div>, image: "/railway.png" },
-        { id: 'template', title: 'SaaS Template', component: <div>SaaS Template content</div>, image: "/star.png" },
+        { id: 'template', title: 'SaaS Template', component: <Template />, image: "/star.png" },
     ]
 
     const currentSection = sections.find(section => section.id === activeSection)
@@ -27,7 +30,8 @@ const Docs = () => {
             <div className="grid grid-cols-12 h-full">
                 {/* Fixed Sidebar */}
                 <div className="text-sm md:text-md col-span-3 lg:col-span-2 p-4 flex flex-col h-full overflow-y-auto border-r border-gray-200 overflow-x-hidden">
-                    <img src="/logo.png" alt="Logo" className="w-48 h-24 mb-4 mx-auto cursor-pointer" onClick={() => navigate('/')} />
+                    {/* <img src="/logo.png" alt="Logo" className="w-48 h-24 mb-4 mx-auto cursor-pointer" onClick={() => navigate('/')} /> */}
+                    <h1 className="text-2xl font-semibold mb-4">SaaS DocS</h1>
                     <nav className="flex-1">
                         <ul className="space-y-2 text-gray-500">
                             {sections.map(section => (
@@ -45,7 +49,9 @@ const Docs = () => {
                         </ul>
                     </nav>
 
-                    <div className="mt-auto pt-10">
+                    <div className="mt-auto border-2 py-4 px-1 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+                        onClick={() => setActiveSection('template')}
+                    >
                         <Link
                             to="#template"
                             className="text-center block text-gray-700 hover:text-primary-600 transition-colors"

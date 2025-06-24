@@ -20,6 +20,13 @@ Main SaaS Docs Repo:
         ✔ Integrate Stripe @done(25-06-23 09:28)
         ✔ Integrate Supabase @done(25-06-23 09:28)
 
+    Authentication:
+        ☐ Style login page
+    
+    Stripe Integration:
+        ☐ Create webhook after deploying to railway
+        ☐ Ensure user is loggedin before checkout
+
     Github Integration:
         ☐ Create endpoint to add collaborators to repo
         ☐ Create stripe webhook to listen for successful payments
@@ -30,10 +37,10 @@ Main SaaS Docs Repo:
         ✔ Finish setup page @done(25-06-23 09:30)
         ✔ Finish User DB page @done(25-06-23 14:45)
         ✔ Finish Authentication page @done(25-06-23 14:45)
-        ☐ Start Stripe page (checkout, integration)
+        ✔ Start Stripe page (checkout, integration) @done(25-06-24 08:37)
 
     Drawing:
-        ☐ Fix all images on main vercel hosting
+        ✔ Fix all images on main vercel hosting @done(25-06-23 17:51)
         ✔ Checkmark @done(25-06-23 15:41)
         ✔ Vercel @done(25-06-23 15:41)
         ✔ X mark @done(25-06-23 15:41)
@@ -57,3 +64,9 @@ Demo Repo:
         ☐ Add testimonials section
         ☐ Implement contact form
         ☐ Optimize for mobile devices
+
+    Component Library:
+        ☐ Create page to showcase components
+        ☐ Add back button
+        ☐ Add a nav bar
+        ☐ 
