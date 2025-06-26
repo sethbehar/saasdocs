@@ -19,7 +19,7 @@ export default function Payment( {session} ) {
     }
 
     const res = await fetch(
-      `http://localhost:8000/create-checkout-session-saas-docs`,
+      `http://localhost:8000/create-checkout-session-saas-demo`,
       {
         method: 'POST',
         headers: {
