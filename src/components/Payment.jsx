@@ -7,7 +7,7 @@ import { useCallback } from 'react';
 import BackButton from '../components/BackButton';
 
 const stripePromise = loadStripe(
-  import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY
+  import.meta.env.VITE_STRIPE_TEST_PUBLISHABLE_KEY
 );
 
 export default function Payment( {session} ) {
