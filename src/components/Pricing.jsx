@@ -1,58 +1,124 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
+// Free plan card using DaisyUI
+export const FreePricingCard = () => {
+  return (
+    <div className="card w-96 bg-base-100 shadow-md">
+      <div className="card-body">
+        <span className="badge badge-xs badge-dash">Not Popular</span>
+        <div className="flex justify-between items-center">
+          <h2 className="text-3xl font-bold">Free</h2>
+        </div>
+        <ul className="mt-6 flex flex-col gap-2 text-xs">
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Access to our documentation</span>
+          </li>
+          <li className="flex items-center opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="line-through">Template SaaS</span>
+          </li>
+          <li className="flex items-center opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="line-through">SaaS Component Library</span>
+          </li>
+          <li className="flex items-center opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="line-through">Built out Stripe integration</span>
+          </li>
+          <li className="flex items-center opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="line-through">Built out Express backend</span>
+          </li>
+        </ul>
+        <div className="mt-6">
+          <Link to="/docs" className="btn btn-outline btn-block">Go to Docs</Link>
+        </div>
+      </div>
+    </div>
+  )
+}
 
-const Pricing = ({ session }) => {
+// Paid plan card using DaisyUI
+export const PaidPricingCard = ({ session }) => {
   const navigate = useNavigate()
-  const [error, setError] = useState(null)
 
   const handlePayment = () => {
     if (!session) {
-        setError('You must be logged in to make a payment.')
-        return
+      navigate('/login')
+      return
     }
     navigate('/payment')
   }
 
   return (
-    <div className='h-1/2 flex flex-col items-center p-6 select-none'>
-      <h1 className='text-2xl md:text-[48px]  mb-4'>Pricing</h1>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 w-3/4 max-w-4xl'>
-        {/* Free Plan */}
-        <div className='border border-gray-300 rounded-lg p-6 flex flex-col items-center'>
-          <h2 className='text-xl font-bold mb-4'>Free</h2>
-          <ul className='text-gray-500 mb-6 space-y-2'>
-            <li className='text-black flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> Access to our documentation</li>
-            <li className='flex flex-row gap-1'><img src='x.png' alt='✔' width={18} height={15} /> <span>Template SaaS</span></li>
-            <li className='flex flex-row gap-1'><img src='x.png' alt='X' width={18} height={15} /> <span>SaaS Component Library</span></li>
-            <li className='flex flex-row gap-1'><img src='x.png' alt='X' width={18} height={15} /> <span>Built out Stripe integration</span></li>
-            <li className='flex flex-row gap-1'><img src='x.png' alt='X' width={18} height={15} /> <span>Built out Express backend</span></li>
-          </ul>
-          <p className='text-2xl font-bold'>Free</p>
+    <div className="card w-96 bg-base-100 shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300" onClick={handlePayment}>
+      <div className="card-body">
+        <span className="badge badge-xs badge-success">Most Popular</span>
+        <div className="flex justify-between items-center">
+          <h2 className="text-3xl font-bold">Template SaaS</h2>
+          <span className="text-xl">$5</span>
         </div>
-
-        {/* Pro Plan */}
-        <div className='border border-gray-300 rounded-lg p-6 flex flex-col items-center shadow-xl cursor-pointer hover:shadow-2xl transition-shadow duration-300 bg-white text-black'
-            onClick={handlePayment}
-        >
-          <h2 className='text-xl font-bold mb-4'>Pro</h2>
-          <ul className='text-black mb-6 space-y-2'>
-            <li className='flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> Access to our documentation</li>
-            <li className='flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> <span>Template SaaS Included</span></li>
-            <li className='flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> <span>SaaS Component Library</span></li>
-            <li className='flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> <span>Built out Stripe integration</span></li>
-            <li className='flex flex-row gap-1'><img src='checkmark.png' alt='✔' width={18} height={15} /> <span>Built out Express backend</span></li>
-
-          </ul>
-          <p className='text-2xl font-bold'>$5</p>
-           <span className='text-gray-500 text-xs'>One lifetime payment</span><br/>
-          {error && <div className='flex flex-row items-center justify-center mt-4 gap-2'>
-            <img src='x.png' alt='Error' width={18} height={18} />
-            <p className='text-red-500 font-bold'>{error}</p>
-            </div>
-            }
-        </div>
+        <ul className="mt-6 flex flex-col gap-2 text-xs">
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Access to our documentation</span>
+          </li>
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Template SaaS Included</span>
+          </li>
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Well documented repository</span>
+          </li>
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Built out Stripe and Supabase integration</span>
+          </li>
+          <li className="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Easy customization with DaisyUI</span>
+          </li>
+        </ul>
+        <p className="text-xs text-gray-500 mt-2">One lifetime payment</p>
       </div>
+    </div>
+  )
+}
+
+// Main Pricing component that uses Free and Paid cards
+const Pricing = ({ session }) => {
+  return (
+    <div className="mx-10 flex flex-col items-center justify-center select-none gap-4 py-6">
+      <h1 className="text-4xl font-bold text-gray-700">Focus on building the product, not the integrations</h1>
+      <p className="text-center text-gray-500 mb-6">Purchase the template to get started in minutes</p>
+      <div className="flex flex-col md:flex-row gap-8">
+        <FreePricingCard />
+        <PaidPricingCard session={session} />
+      </div>
+      <a className='btn btn-outline mt-10 p-8'>Visit template demo</a>
     </div>
   )
 }

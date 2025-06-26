@@ -1,41 +1,50 @@
-import { Link } from 'react-router-dom' 
+import { Link } from "react-router-dom";
+import { MenuIcon } from "lucide-react";
 
+// Navbar component for the application, providing navigation links and session management.
+// Displays a login button if no session exists, or a logout button if a session is present.
 const Navbar = ({ session, supabase }) => {
-
   return (
-     <nav className="text-black flex items-center justify-between mt-12 mx-12 px-16 p-4 gap-3 rounded-2xl bg-[#272763]/10 shadow-lg select-none">
-        <div className='flex flex-row gap-1 cursor-pointer'>
-            <Link to='/docs' className='font-bold'>Docs</Link>
-            <div className='bg-blue-500 text-center items-center justify-center flex rounded h-4 px-1'>
-                <span className='text-[8px] text-white font-bold'>Beta</span>    
-            </div>
+    <div className="navbar bg-base-100 border-2 border-gray-200 rounded-xl shadow-lg mt-4">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+            <MenuIcon className="h-6 w-6" />
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] border-2 border-gray-200 mt-4 w-52 p-2 shadow-md"
+          >
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/docs">Documentation</Link>
+            </li>
+          </ul>
         </div>
-        <div className='flex flex-row gap-4 font-bold'>
-            <Link to='#product' className='cursor-pointer text-sm'>Product</Link>
-            <Link to='#about' className='cursor-pointer text-sm'>About</Link>
-        </div>
-        <div className="auth-section">
-          { session ? (
-            <div className="flex items-center gap-2 md:gap-4">
-              <button 
-                className="text-gray-700 cursor-pointer hover:text-black duration-200 transition text-xs md:text-sm"
-                onClick={() => supabase.auth.signOut()}
-              >
-                Logout
-              </button>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 md:gap-4">
-              <Link to="/login"
-                className="text-gray-700 cursor-pointer hover:text-black duration-200 transition text-xs md:text-sm"
-              >
-                Login
-              </Link>
-            </div>
-          )}
-        </div>
-    </nav>
-  )
-}
+      </div>
+      <div className="navbar-center">
+        <Link to="/docs" className="btn btn-ghost text-xl flex items-center">
+          SaaS Docs
+        </Link>
+      </div>
+      {/* The navbar-end section contains the login/logout button based on session state. */}
+      {/* If a session exists, it shows a logout button, otherwise it shows a login button. */}
+      <div className="navbar-end">
+        {session ? (
+          <button className="btn btn-outline" onClick={() => supabase.auth.signOut()}>
+            Logout
+          </button>
+        )
+        :
+        <Link to="/login" className="btn btn-outline">
+          Login
+        </Link>
+        }
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

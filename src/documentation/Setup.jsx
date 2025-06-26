@@ -42,6 +42,13 @@ const Setup = () => {
                     <CodeBlock text={`tailwindcss()`} />
                     <p>Finally, add the import statement to our <span className="text-white dark:bg-gray-800 p-1 rounded-lg">index.css</span> file.</p>
                     <CodeBlock text={`@import "tailwindcss";`} />
+
+                    <p>Optional: Set up DaisyUI for additional components and styles.</p>
+                    <CodeBlock text="npm i -D daisyui@latest" />
+                    <p>Then, add the following to your <span className="text-yellow-500 dark:bg-gray-800 p-1 rounded-lg">index.css</span> file:</p>
+                    <CodeBlock text={`@plugin "daisyui" {
+  themes: light --default
+}`} />
                 </div>
             </div>
 
