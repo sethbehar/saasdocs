@@ -19,7 +19,7 @@ export default function Payment( {session} ) {
     }
 
     const res = await fetch(
-      `${import.meta.env.VITE_RAILWAY_URL}/create-checkout-session-saas-demo`,
+      `${import.meta.env.VITE_RAILWAY_URL}/create-checkout-session-demo`,
       {
         method: 'POST',
         headers: {
