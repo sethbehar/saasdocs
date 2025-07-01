@@ -21,25 +21,25 @@ export const FreePricingCard = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
             </svg>
-            <span className="line-through">Template SaaS</span>
+            <span className="line-through">Template SaaS Included</span>
           </li>
           <li className="flex items-center opacity-50">
             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
             </svg>
-            <span className="line-through">SaaS Component Library</span>
+            <span className="line-through">Well documented repository</span>
           </li>
           <li className="flex items-center opacity-50">
             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
             </svg>
-            <span className="line-through">Built out Stripe integration</span>
+            <span className="line-through">Built out Stripe and Supabase integration</span>
           </li>
           <li className="flex items-center opacity-50">
             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
             </svg>
-            <span className="line-through">Built out Express backend</span>
+            <span className="line-through">Easy customization with DaisyUI</span>
           </li>
         </ul>
         <div className="mt-6">
@@ -68,7 +68,7 @@ export const PaidPricingCard = ({ session }) => {
         <span className="badge badge-xs badge-success">Most Popular</span>
         <div className="flex justify-between items-center">
           <h2 className="text-3xl font-bold">Template SaaS</h2>
-          <span className="text-xl">$5</span>
+          <span className="text-xl">$9.99</span>
         </div>
         <ul className="mt-6 flex flex-col gap-2 text-xs">
           <li className="flex items-center">
@@ -118,7 +118,7 @@ const Pricing = ({ session }) => {
         <FreePricingCard />
         <PaidPricingCard session={session} />
       </div>
-      <a className='btn btn-outline mt-10 p-8'>Visit template demo</a>
+      <a className='btn btn-outline mt-10 p-8' href="https://template-saas-docs.vercel.app" target="_blank" rel="noopener noreferrer">Visit template demo</a>
     </div>
   )
 }

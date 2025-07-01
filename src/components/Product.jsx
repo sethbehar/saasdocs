@@ -20,7 +20,7 @@ const Product = () => {
           </span>
         </div>
       </div>
-        <img src="/Demo.png" alt="Product illustration" className="max-w-xs md:max-w-sm lg:max-w-md mt-6 shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={() => window.open('https://saasdocs.vercel.app', '_blank')}/>
+        <img src="/Demo.png" alt="Product illustration" className="max-w-xs md:max-w-sm lg:max-w-md mt-6 shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={() => window.open('https://template-saas-docs.vercel.app', '_blank')}/>
     </div >
   )
 }

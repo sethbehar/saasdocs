@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Introduction from "./Introduction";
 import Setup from "./Setup";
 import Db from "./Db";
@@ -9,7 +8,6 @@ import Stripe from "./Stripe";
 import Template from "./Template";
 
 const Docs = () => {
-    const navigate = useNavigate()
     const [activeSection, setActiveSection] = useState('introduction')
 
     const sections = [
@@ -18,9 +16,8 @@ const Docs = () => {
         { id: 'database', title: 'Database', component: <Db />, image: "/postgres.png" },
         { id: 'authentication', title: 'Auth', component: <Authentication />, image: "/Supabase.png" },
         { id: 'stripe', title: 'Stripe', component: <Stripe />, image: "/Stripe.png" },
-        { id: 'hosting', title: 'Hosting', component: <div>Hosting content</div>, image: "/vercel.png" },
-        { id: 'deployment', title: 'Deployment', component: <div>Deployment content</div>, image: "/railway.png" },
-        { id: 'template', title: 'SaaS Template', component: <Template />, image: "/star.png" },
+        { id: 'hosting', title: 'Hosting', component: <div>Coming soon...</div>, image: "/vercel.png" },
+        { id: 'deployment', title: 'Deployment', component: <div>Coming soon...</div>, image: "/railway.png" },
     ]
 
     const currentSection = sections.find(section => section.id === activeSection)
@@ -31,7 +28,7 @@ const Docs = () => {
                 {/* Fixed Sidebar */}
                 <div className="text-sm md:text-md col-span-3 lg:col-span-2 p-4 flex flex-col h-full overflow-y-auto border-r border-gray-200 overflow-x-hidden">
                     {/* <img src="/logo.png" alt="Logo" className="w-48 h-24 mb-4 mx-auto cursor-pointer" onClick={() => navigate('/')} /> */}
-                    <h1 className="text-2xl font-semibold mb-4">SaaS DocS</h1>
+                    <Link to="/" className="text-2xl font-semibold mb-4">SaaS DocS</Link>
                     <nav className="flex-1">
                         <ul className="space-y-2 text-gray-500">
                             {sections.map(section => (
@@ -52,12 +49,14 @@ const Docs = () => {
                     <div className="mt-auto border-2 py-4 px-1 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
                         onClick={() => setActiveSection('template')}
                     >
-                        <Link
-                            to="#template"
+                        <a
+                            href="https://template-saas-docs.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-center block text-gray-700 hover:text-primary-600 transition-colors"
                         >
-                            Try our Saas Template
-                        </Link>
+                            Try our SaaS Template
+                        </a>
                     </div>
                 </div>
 
